@@ -72,6 +72,19 @@ ALTER TABLE public.profiles DISABLE ROW LEVEL SECURITY;
 ALTER TABLE public.orders DISABLE ROW LEVEL SECURITY;
 ALTER TABLE public.batches DISABLE ROW LEVEL SECURITY;
 
+-- Fallback RLS Policies (allows inserts even if RLS is enabled in dashboard)
+DROP POLICY IF EXISTS "Allow public insert on orders" ON public.orders;
+CREATE POLICY "Allow public insert on orders" ON public.orders FOR INSERT WITH CHECK (true);
+
+DROP POLICY IF EXISTS "Allow public select on orders" ON public.orders;
+CREATE POLICY "Allow public select on orders" ON public.orders FOR SELECT USING (true);
+
+DROP POLICY IF EXISTS "Allow public update on orders" ON public.orders;
+CREATE POLICY "Allow public update on orders" ON public.orders FOR UPDATE USING (true);
+
+DROP POLICY IF EXISTS "Allow public all on profiles" ON public.profiles;
+CREATE POLICY "Allow public all on profiles" ON public.profiles FOR ALL USING (true) WITH CHECK (true);
+
 GRANT ALL ON TABLE public.admins TO anon, authenticated, postgres, service_role;
 GRANT ALL ON TABLE public.profiles TO anon, authenticated, postgres, service_role;
 GRANT ALL ON TABLE public.orders TO anon, authenticated, postgres, service_role;
