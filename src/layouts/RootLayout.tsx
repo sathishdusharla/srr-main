@@ -125,6 +125,7 @@ export function RootLayout() {
         
         <div className="max-w-7xl mx-auto mt-24 pt-8 border-t border-[#E2E4E9]/10 flex flex-col md:flex-row items-center justify-between text-xs text-[#E2E4E9]/40 font-light tracking-wide relative z-10">
           <p>&copy; {new Date().getFullYear()} SRR Farms. All rights reserved.</p>
+          <p className="mt-2 md:mt-0 text-[#C5A059]/90 font-medium tracking-wider">Developed by Sathish Dusharla</p>
           <div className="flex gap-6 mt-4 md:mt-0">
             <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
             <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
