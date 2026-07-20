@@ -415,7 +415,7 @@ export function Navigation() {
                   </button>
 
                   <a
-                    href={`https://wa.me/919999999999?text=${getWhatsAppMessage()}`}
+                    href={`https://wa.me/919948233702?text=${getWhatsAppMessage()}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-full relative flex items-center justify-center gap-3 bg-emerald-600 hover:bg-emerald-500 text-white py-4.5 rounded-full shadow-[0_10px_25px_rgba(16,185,129,0.2)] transition-colors font-bold tracking-widest uppercase text-xs cursor-pointer text-center"

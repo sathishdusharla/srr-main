@@ -230,7 +230,7 @@ export default function Checkout() {
                 <div className="col-span-2 relative group">
                   <input 
                     type="text" 
-                    placeholder="Phone Number" 
+                    placeholder="Phone Number (e.g. +91 99482 33702)" 
                     value={phone}
                     onChange={(e) => setPhone(e.target.value)}
                     className="w-full px-5 py-4 border border-[#E2E4E9]/20 focus:outline-none focus:border-[#C5A059] bg-[#05070B] transition-colors text-sm font-light placeholder:text-gray-500 rounded-lg" 

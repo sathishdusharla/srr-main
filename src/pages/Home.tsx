@@ -661,7 +661,7 @@ export default function Home() {
                     All Products
                   </button>
                   <a 
-                    href={`https://wa.me/919999999999?text=${encodeURIComponent(
+                    href={`https://wa.me/919948233702?text=${encodeURIComponent(
                       `Hello Team SRR Farms, I would like to place an order for the ${selectedVolume} jar of Pure A2 Desi Cow Ghee (${purchaseType === "subscribe" ? "Subscription Plan" : "One-time Purchase"}). Please share details.`
                     )}`}
                     target="_blank"

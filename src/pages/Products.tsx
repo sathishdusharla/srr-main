@@ -389,7 +389,7 @@ export default function Products() {
                   </button>
 
                   <a
-                    href={`https://wa.me/919999999999?text=${encodeURIComponent(
+                    href={`https://wa.me/919948233702?text=${encodeURIComponent(
                       `Hello Team SRR Farms, I would like to place an order for the ${selectedProduct.name} (${selectedProduct.volume}) jar. Please share payment details.`
                     )}`}
                     target="_blank"
